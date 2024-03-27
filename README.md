@@ -9,8 +9,10 @@ for check your **MASTER IP** on Raspberry pi
   nano .bashrc
   ```
   at
+  
   `export ROS_HOSTNAME= **MASTER IP**`
-`export ROS_MASTER_URI=http://**MASTER IP**:11311`
+  
+  `export ROS_MASTER_URI=http://**MASTER IP**:11311`
 
 ## 1.Start Server at your Laptop
 
@@ -19,3 +21,14 @@ for check your **MASTER IP** on Raspberry pi
   yarn start
   ```
 ## 2.Start rosbridge at Raspberry pi
+ ```bash
+  roslaunch rosbridge_server rosbridge_websocket.launch
+  ```
+## 3.Start Joy controller[Sub and Pub] at Raspberry pi
+ ```bash
+  rosrun joy_controller joy_controller.py
+  ```
+## 4.Start connecting Raspberry Pi and Arduino run at Raspberry pi
+ ```bash
+  rosrun rosserial_python serial_node.py
+  ```
