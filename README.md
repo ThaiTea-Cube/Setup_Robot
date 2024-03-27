@@ -9,8 +9,8 @@ for check your **MASTER IP** on Raspberry pi
   nano .bashrc
   ```
   at
-  `export ROS_HOSTNAME= **MASTER IP**
-export ROS_MASTER_URI=http://**MASTER IP**:11311`
+  `export ROS_HOSTNAME= **MASTER IP**`
+`export ROS_MASTER_URI=http://**MASTER IP**:11311`
 
 ## 1.Start Server at your Laptop
 
