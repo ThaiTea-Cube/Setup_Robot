@@ -1,5 +1,9 @@
 # Setup Robot
-## 0.When change wifi 
+### For control another PC on same network :
+  ```bash
+  ssh <name PC>@<Network IP>
+  ```
+## 0.When change wifi
 for check your **MASTER IP** on Raspberry pi
   ```bash
   ifconfig
