@@ -36,3 +36,4 @@ for check your **MASTER IP** on Raspberry pi
  ```bash
   rosrun rosserial_python serial_node.py
   ```
+if port doesn't open run `sudo chmod a+rw /dev/ttyACM0`
