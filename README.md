@@ -34,6 +34,6 @@ for check your **MASTER IP** on Raspberry pi
   ```
 ## 4.Start connecting Raspberry Pi and Arduino run at Raspberry pi
  ```bash
-  rosrun rosserial_python serial_node.py
+  rosrun rosserial_python serial_node.py /dev/ttyACM0
   ```
 if port doesn't open run `sudo chmod a+rw /dev/ttyACM0`
