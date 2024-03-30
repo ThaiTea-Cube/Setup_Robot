@@ -1,3 +1,30 @@
+# Setup
+
+## yarn start at cd /iRAP-Minirescue-GUI
+  ```bash
+  yarn start
+  ```
+## rosbridge
+  ```bash
+  roslaunch rosbridge_server rosbridge_websocket.launch
+  ```
+## joy
+  ```bash
+  rosrun joy_controller joy_controller.py
+  ```
+## webcam
+  ```bash
+  roslaunch usb_cam two_usb_cams.launch
+  ```
+## arduino_serial
+  ```bash
+  rosrun rosserial_python serial_node.py /dev/ttyACM0
+  ```
+### For Check Camera detect
+  ```bash
+  rostopic echo /chatcam
+  ```
+
 # Setup Robot
 ### For control another PC on same network :
   ```bash
