@@ -59,7 +59,12 @@ for check your **MASTER IP** on Raspberry pi
  ```bash
   rosrun joy_controller joy_controller.py
   ```
-## 4.Start connecting Raspberry Pi and Arduino run at Raspberry pi
+## 4.Start Camera at Raspberry Pi
+```bash
+  roslaunch usb_cam two_usb_cams.launch
+  ```
+  
+## 5.Start connecting Raspberry Pi and Arduino run at Raspberry pi
  ```bash
   rosrun rosserial_python serial_node.py /dev/ttyACM0
   ```
